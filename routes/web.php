@@ -37,4 +37,9 @@ Route::get('all', [TeamListController::class,'all'])->name('all');
 
 Route::view('sites','sites')->name('sites');
 Route::view('about','about')->name('about');
+Route::view('ourteam','ourteam')->name('ourteam');
+Route::view('levi','levi')->name('levi');
+Route::view('pau','pau')->name('pau');
 Route::view('rules','rules')->name('rules');
+
+Route::view('courses/java', 'courses.java')->name('java');

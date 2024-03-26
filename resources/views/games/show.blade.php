@@ -25,23 +25,23 @@
                             </div>
                             <div class="grid justify-items-end">
                                 <div class="mb-4 flex justify-center">
-                                    <label class="block text-gray-700 font-bold mb-2" for="goals1">Goals:</label>
+                                    <label class="block text-gray-700 font-bold mb-2" for="goals1">Clean Code:</label>
                                     <input class="shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="number" id="goals1" name="goals1" value="0" min="0">
                                 </div>
                                 <div class="mb-4 flex justify-center">
-                                    <label class="block text-gray-700 font-bold mb-2" for="fouls_commited1">Fouls committed:</label>
+                                    <label class="block text-gray-700 font-bold mb-2" for="fouls_commited1">Team Work:</label>
                                     <input class="shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="number" id="fouls_commited1" name="fouls_commited1" value="0" min="0">
                                 </div>
                                 <div class="mb-4 flex justify-center">
-                                    <label class="block text-gray-700 font-bold mb-2" for="fouls_received">Fouls received:</label>
+                                    <label class="block text-gray-700 font-bold mb-2" for="fouls_received">Organization:</label>
                                     <input class="shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="number" id="fouls_received1" name="fouls_received1" value="0" min="0">
                                 </div>
                                 <div class="mb-4 flex justify-center">
-                                    <label class="block text-gray-700 font-bold mb-2" for="red_cards">Red cards 🟥:</label>
+                                    <label class="block text-gray-700 font-bold mb-2" for="red_cards">Cheating 🟥:</label>
                                     <input class="shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="number" id="red_cards1" name="red_cards1" value="0" min="0">
                                 </div>
                                 <div class="mb-4 flex justify-center">
-                                    <label class="block text-gray-700 font-bold mb-2" for="yellow_cards1">Yellow cards 🟨:</label>
+                                    <label class="block text-gray-700 font-bold mb-2" for="yellow_cards1">No Documentation 🟨:</label>
                                     <input class="shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="number" id="yellow_cards1" name="yellow_cards1" value="0" min="0">
                                 </div>
                             </div>
@@ -81,23 +81,23 @@
                             <div class="grid justify-items-start">
                                 <div class="mb-4 flex justify-center">
                                     <input class="shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="number" id="goals2" name="goals2" value="0" min="0">
-                                    <label class="block text-gray-700 font-bold mb-2" for="goals2">&nbsp: Goals</label>
+                                    <label class="block text-gray-700 font-bold mb-2" for="goals2">&nbsp: Clean Code</label>
                                 </div>
                                 <div class="mb-4 flex justify-center">
                                     <input class="shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="number" id="fouls_commited2" name="fouls_commited2" value="0" min="0">
-                                    <label class="block text-gray-700 font-bold mb-2" for="fouls_committed2">&nbsp :Fouls committed</label>
+                                    <label class="block text-gray-700 font-bold mb-2" for="fouls_committed2">&nbsp :Team Work</label>
                                 </div>
                                 <div class="mb-4 flex justify-center">                                                    
                                     <input class="shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="number" id="fouls_received2" name="fouls_received2" value="0" min="0">
-                                    <label class="block text-gray-700 font-bold mb-2" for="fouls_received2">&nbsp :Fouls received</label>
+                                    <label class="block text-gray-700 font-bold mb-2" for="fouls_received2">&nbsp :Organization</label>
                                 </div>
                                 <div class="mb-4 flex justify-center">                                                    
                                     <input class="shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="number" id="red_cards2" name="red_cards2" value="0" min="0">
-                                    <label class="block text-gray-700 font-bold mb-2" for="red_cards2">&nbsp :🟥 Red cards</label>
+                                    <label class="block text-gray-700 font-bold mb-2" for="red_cards2">&nbsp :🟥 Cheating</label>
                                 </div>
                                 <div class="mb-4 flex justify-center">                                                   
                                     <input class="shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="number" id="yellow_cards2" name="yellow_cards2" value="0" min="0">
-                                    <label class="block text-gray-700 font-bold mb-2" for="yellow_cards2">&nbsp :🟨 Yellow cards</label>
+                                    <label class="block text-gray-700 font-bold mb-2" for="yellow_cards2">&nbsp :🟨 No Documentation</label>
                                 </div>
                             </div>        
                         </div>

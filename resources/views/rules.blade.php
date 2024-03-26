@@ -10,12 +10,12 @@
                 <h2 class="text-2xl text-gray-900 font-bold md:text-4xl">Payment plans:</h2>
                 <p class="mt-6 text-gray-600">— We have two payment methods, annual and monthly.<br><br>
                 <div class="flex flex-col justify-center items-start">
-                    <div class="bg-green-500 rounded-lg border-4 border-green-700 p-4 mb-4">
+                    <div class="bg-green-500 rounded-lg border-4 border-green-700 p-4 mb-4 ml-40">
                         <div class="text-xl font-bold">
                             <span class="text-yellow-400">$ </span>35.0 monthly
                         </div>
                     </div>
-                    <div class="bg-green-500 rounded-lg border-4 border-green-700 p-4">
+                    <div class="bg-green-500 rounded-lg border-4 border-green-700 p-4 ml-40">
                         <div class="text-xl font-bold">
                             <span class="text-yellow-400">$ </span>350.0 annual
                         </div>

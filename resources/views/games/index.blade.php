@@ -78,7 +78,7 @@
                                 <td class="py-3 px-6 text-left whitespace-nowrap text-base font-semibold">
                                     <a href="{{ route('games.show', $game) }}">
                                         <button class="bg-fuchsia-400 hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-                                            Go To Play
+                                            Go To Code
                                         </button>
                                     </a>
                                 </td>
@@ -93,7 +93,7 @@
 
 <style>
     .bg-image {
-        background-image: url({{ asset('/img/R.jpg') }});
+        background-image: url({{ asset('/img/prado-verde.jpg') }});
         background-repeat: no-repeat;
         background-size: cover;
     }

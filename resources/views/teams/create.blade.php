@@ -9,7 +9,7 @@
                 <div class="rounded-xl bg-white shadow-xl">
                     <div class="p-6 sm:p-8">
                         <div class="space-y-4">
-                            <h2 class="mb-8 text-2xl text-cyan-900 font-bold">Register your team:</h2>
+                            <h2 class="mb-8 text-2xl text-cyan-900 font-bold">Register your Course:</h2>
                         </div>
                         <form action="{{ route('teams.store') }}" method="POST" class="mx-5 my-5">
                             @csrf
@@ -34,7 +34,7 @@
                             <br>
                             <label class="relative block p-3 border-2 border-gray-500 transition duration-300 hover:border-blue-400 focus:bg-blue-50 active:bg-blue-100 rounded"
                                 htmlFor="name">
-                                <span class="text-md font-semibold text-zinc-900" htmlFor="name">Team Name</span>
+                                <span class="text-md font-semibold text-zinc-900" htmlFor="name">Course Name</span>
                                 <input class="w-full bg-transparent p-0 text-sm  text-gray-500 focus:outline-none" id="name"
                                     type="text" name="name" value="{{ old('name') }}" placeholder="Please fill out this field" />
                                 @error('name')

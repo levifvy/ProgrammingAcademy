@@ -74,17 +74,10 @@
                             required
                         >
                             <option value="">Select Position</option>
-                            <option value="Goalkeeper_(GK)" {{ old('position') === 'Goalkeeper_(GK)' ? 'selected' : '' }}>Goalkeeper (GK)</option>
-                            <option value="Center-back_(CB)" {{ old('position') === 'Center-back_(CB)' ? 'selected' : '' }}>Center-back (CB)</option>
-                            <option value="Full-back_left_(LB)" {{ old('position') === 'Full-back_left_(LB)' ? 'selected' : '' }}>Full-back left (LB)</option>
-                            <option value="Full-back_right_(RB)" {{ old('position') === 'Full-back_right_(RB)' ? 'selected' : '' }}>Full-back right (RB)</option>
-                            <option value="Defensive midfielder_(CDM)" {{ old('position') === 'Defensive midfielder_(CDM)' ? 'selected' : '' }}>Defensive midfielder (CDM)</option>
-                            <option value="Central midfielder_(CM)" {{ old('position') === 'Central midfielder_(CM)' ? 'selected' : '' }}>Central midfielder (CM)</option>
-                            <option value="Attacking midfielder_(CAM)" {{ old('position') === 'Attacking midfielder_(CAM)' ? 'selected' : '' }}>Attacking midfielder (CAM)</option>
-                            <option value="Winger_left_(LW)" {{ old('position') === 'Winger_left_(LW)' ? 'selected' : '' }}>Winger left (LW)</option>
-                            <option value="Winger_right_(RW)" {{ old('position') === 'Winger_right_(RW)' ? 'selected' : '' }}>Winger right (RW)</option>
-                            <option value="Striker_(ST)" {{ old('position') === 'Striker_(ST)' ? 'selected' : '' }}>Striker (ST)</option>
-                            <option value="Striker_(CF)" {{ old('position') === 'Striker_(CF)' ? 'selected' : '' }}>Striker (CF)</option>
+                            <option value="Goalkeeper_(GK)" {{ old('position') === 'Goalkeeper_(GK)' ? 'selected' : '' }}>Admin (A)</option>
+                            <option value="Center-back_(CB)" {{ old('position') === 'Center-back_(CB)' ? 'selected' : '' }}>Teacher (T)</option>
+                            <option value="Full-back_left_(LB)" {{ old('position') === 'Full-back_left_(LB)' ? 'selected' : '' }}>Student (S)</option>
+                            <option value="Full-back_right_(RB)" {{ old('position') === 'Full-back_right_(RB)' ? 'selected' : '' }}>Outsourcing (O)</option>
                         </select>
                         @error('position')
                             <p class="text-red-500 text-xs italic">{{ $message }}</p>

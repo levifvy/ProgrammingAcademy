@@ -10,7 +10,7 @@
                         <table class="min-w-max w-full table-auto">
                             <thead>
                                 <tr class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal rounded-lg">
-                                    <th class="py-3 px-6 text-left">Categories & Teams</th>
+                                    <th class="py-3 px-6 text-left">Categories & Courses</th>
                                     <th class="py-3 px-6 text-center">Actions</th>
                                 </tr>
                             </thead>
@@ -87,7 +87,7 @@
 
 <style>
     .bg-image {
-        background-image: url({{ asset('/img/cancha6.jpg') }});
+        background-image: url({{ asset('/img/flores.webp') }});
         background-repeat: no-repeat;
         background-size: cover;
     }

@@ -30,7 +30,7 @@
             <div class="rounded-xl bg-white shadow-xl">
                 <div class="p-6 sm:p-16">
                     <div class="space-y-4">
-                        <h2 class="mb-8 text-2xl text-cyan-900 font-bold">All teams: </h2>
+                        <h2 class="mb-8 text-2xl text-cyan-900 font-bold">All Courses: </h2>
                     </div>
                     @php
                         $counter = 1;

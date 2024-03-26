@@ -10,7 +10,7 @@
                 <div class="rounded-xl bg-white shadow-xl">
                     <div class="p-6 sm:p-16">
                         <div class="space-y-4">
-                            <h2 class="mb-8 text-2xl text-cyan-900 font-bold">List of football teams:</h2>
+                            <h2 class="mb-8 text-2xl text-cyan-900 font-bold">List of courses:</h2>
                         </div>
                         <div class="mt-4 grid space-y-4">
                             <a href="all" class="group h-12 px-6 border-2 border-gray-300 rounded-full transition duration-300 hover:border-blue-400 focus:bg-blue-50 active:bg-blue-100 flex items-center justify-center">

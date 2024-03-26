@@ -17,7 +17,7 @@
                 </div>
                 <div class="w-full bg-green-200 p-6">
                     <div class="card-body">
-                        <h3 class="mb-8 text-2xl text-cyan-900 font-bold">Teams :</h3>
+                        <h3 class="mb-8 text-2xl text-cyan-900 font-bold">Courses:</h3>
                         @php
                             $counter = 1;
                         @endphp

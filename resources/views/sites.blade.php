@@ -8,31 +8,31 @@
     <div class="grid grid-cols-3 gap-2">
       <div class="w-full p-4">
         <a href="{{route('teams.index')}}" class="relative block h-48 overflow-hidden rounded">
-          <img class="block h-full w-full object-cover object-center cursor-pointer" src="{{asset('/img/football1.jpg')}}" alt="Football" loading="lazy" width="100" height="100"/>
+          <img class="block h-full w-full object-cover object-center cursor-pointer" src="{{asset('/img/java.jpg')}}" alt="Football" loading="lazy" width="100" height="100"/>
         </a>
         <div class="mt-2">
-          <h3 class="title-font mb-1 text-xs tracking-widest text-gray-500">Find your team</h3>
-          <h2 class="title-font text-lg font-medium text-gray-900"><strong>Teams</strong></h2>
-          <p class="mt-0 text-xs">By categories</p>
+          <h3 class="title-font mb-1 text-xs tracking-widest text-gray-500">Learn how to use Java</h3>
+          <h2 class="title-font text-lg font-medium text-gray-900"><strong>Java</strong></h2>
+          <p class="mt-0 text-xs">Easy</p>
         </div>
       </div>
       <div class="w-full p-4">
         <a href="{{route('games.index')}}" class="relative block h-48 overflow-hidden rounded">
-          <img class="block h-full w-full object-cover object-center cursor-pointer" src="{{asset('/img/football2.jpg')}}" alt="Football" loading="lazy" width="100" height="100"/>
+          <img class="block h-full w-full object-cover object-center cursor-pointer" src="{{asset('/img/python.png')}}" alt="Football" loading="lazy" width="100" height="100"/>
         </a>
         <div class="mt-2">
           <h3 class="title-font mb-1 text-xs tracking-widest text-gray-500">Get the best</h3>
-          <h2 class="title-font text-lg font-medium text-gray-900"><strong>Matches</strong></h2>
+          <h2 class="title-font text-lg font-medium text-gray-900"><strong>Python</strong></h2>
           <p class="mt-0 text-xs">The best schedule</p>
         </div>
       </div>
       <div class="w-full p-4">
         <a href="{{route('results.index')}}" class="relative block h-48 overflow-hidden rounded">
-          <img class="block h-full w-full object-cover object-center cursor-pointer" src="{{asset('/img/football3.jpg')}}" alt="Football" width="50" height="50"/>
+          <img class="block h-full w-full object-cover object-center cursor-pointer" src="{{asset('/img/postgres.jpg')}}" alt="Football" width="50" height="50"/>
         </a>
         <div class="mt-2">
           <h3 class="title-font mb-1 text-xs tracking-widest text-gray-500">Always available</h3>
-          <h2 class="title-font text-lg font-medium text-gray-900"><strong>Results</strong></h2>
+          <h2 class="title-font text-lg font-medium text-gray-900"><strong>Postgres SQL</strong></h2>
           <p class="mt-0 text-xs">All you need</p>
         </div>
       </div>
@@ -60,11 +60,11 @@
       </div>
       <div class="w-full p-4">
         <a href="{{route('contactUs.index')}}" class="relative block h-48 overflow-hidden rounded">
-          <img class="block h-full w-full object-cover object-center cursor-pointer" src="{{asset('/img/joinUs.jpg')}}" alt="Football" width="100" height="100"/>
+          <img class="block h-full w-full object-cover object-center cursor-pointer" src="{{asset('/img/club.jpg')}}" alt="Football" width="100" height="100"/>
         </a>
         <div class="mt-2">
           <h3 class="title-font mb-1 text-xs tracking-widest text-gray-500">You want to play</h3>
-          <h2 class="title-font text-lg font-medium text-gray-900"><strong>Join a team</strong></h2>
+          <h2 class="title-font text-lg font-medium text-gray-900"><strong>Join to our Programming club</strong></h2>
           <p class="mt-0 text-xs">If you don't have one</p>
         </div>
       </div>
@@ -74,7 +74,7 @@
 
 <style>
   .bg-image {
-    background-image: url({{asset('/img/cesped3.jpg')}});
+    background-image: url({{asset('/img/')}});
     background-repeat: no-repeat;
     background-size: cover;
   }

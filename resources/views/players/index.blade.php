@@ -19,7 +19,7 @@
                                 <th class="px-4 py-2">Age</th>
                                 <th class="px-4 py-2">Position</th>
                                 <th class="px-4 py-2">NIF</th>
-                                <th class="px-4 py-2">Team</th>
+                                <th class="px-4 py-2">Course</th>
                                 <th class="px-4 py-2">Category</th>
                                 <th class="px-4 py-2">Actions</th>
                             </tr>
