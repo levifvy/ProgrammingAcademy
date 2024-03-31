@@ -7,7 +7,7 @@
         <div class="relative container m-auto px-6 text-gray-500 md:px-12 xl:px-20">
             <div class="m-auto md:w-8/12 lg:w-6/12 xl:w-6/12">
                 <div class="rounded-xl bg-white shadow-xl">
-                    <div class="p-6 sm:p-8">
+                    <div class="bg-yellow-200 p-6 sm:p-8 rounded">
                         <div class="space-y-4">
                             <h2 class="mb-8 text-2xl text-cyan-900 font-bold">New Course:</h2>
                         </div>

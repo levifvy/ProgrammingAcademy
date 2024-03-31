@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\DB;
 class TeamController extends Controller
 {
     public function index(){
-        $teams = Team::orderBy('id', 'desc')->paginate(50);
+        $teams = Team::orderBy('name')->get();
         return view('teams.index', compact('teams'));
     }
 

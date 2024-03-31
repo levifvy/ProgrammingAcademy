@@ -12,9 +12,8 @@
 <link
     href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
     rel="stylesheet">
-    <div class="bg-gradient-to-r from-blue-950 to-pink-200 h-screen">
-    <div class="container mx-auto pt-4">
-        <div class="overflow-x-auto">
+    <div class="bg-gradient-to-r from-blue-950 to-pink-200 min-h-screen flex flex-col justify-between">
+        <div class="container mx-auto pt-4 overflow-x-auto">
             <table class="table text-gray-400 border-separate space-y-6 text-sm mx-auto">
                 <thead class="bg-gray-700 text-white">
                     <tr>
@@ -75,7 +74,8 @@
             </table>
         </div>
     </div>
-</div>
+
+@endsection
 
 <style>
     .bg-stadium {
@@ -105,6 +105,3 @@
         border-radius: .625rem 0 0 .625rem;
     }
 </style>
-@endsection
-
-

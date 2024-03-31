@@ -3,51 +3,50 @@
 @section('title', 'Game Show')
 
 @section('content')
-<div class="bg-gradient-to-r from-blue-900 to-red-900">
+<div class="bg-gradient-to-r from-blue-900 to-red-900 min-h-screen flex flex-col justify-between">
     <div class="italic text-white p-1">
         Match was created in: {{ $game->game_date }}
     </div>
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="container mx-auto flex-grow px-4 sm:px-6 lg:px-8">
         <div class="text-center">
             <form method="POST" action="{{ route('teams.storeResults', $game->id) }}" id="game-form">
                 @csrf
-                <div class="grid grid-cols-3 gap-4 mt-4 bg-transparent shadow-md rounded px-8 pt-6 pb-8 mb-4 text-white">
-                    <div class="form-group col-1">
-                        <h2 class="text-3xl font-bold text-white">{{ $game->team1->name }}</h2>
-                        <div class="mt-2 bg-white shadow-md rounded px-8 pt-2 pb-8 mb-4">
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4 bg-transparent shadow-md rounded px-8 pt-6 pb-8 mb-4 text-white">
+                    <div class="form-group">
+                        <h2 class="text-3xl font-bold text-white sm:text-center">{{ $game->team1->name }}</h2>
+                        <div class="mt-2 bg-white shadow-md rounded px-8 pt-2 pb-8 mb-4 sm:mt-2">
                             <div class="grid grid-cols-4" title="category">
                                 <div class="col-start-1">
                                     <input type="hidden" name="team_id1" id="team_id1" value="{{ old('team_id1', $game->team1_id) }}">
                                     <p class="text-gray-700 font-bold text-start">{{ $game->category->name }}</p>
                                     <input type="hidden" name="category_id1" id="category_id1" value="{{ old('category_id1', $game->category_id) }}">
-                                    
                                 </div>
                             </div>
-                            <div class="grid justify-items-end">
-                                <div class="mb-4 flex justify-center">
-                                    <label class="block text-gray-700 font-bold mb-2" for="goals1">Clean Code:</label>
-                                    <input class="shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="number" id="goals1" name="goals1" value="0" min="0">
+                            <div class="grid justify-items-end sm:flex-col">
+                                <div class="mb-4 flex justify-center sm:mb-4">
+                                    <label class="block text-gray-700 font-bold mb-2" for="goals1">Creativity:</label>
+                                    <input class="shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline sm:w-full" type="number" id="goals1" name="goals1" value="0" min="0">
                                 </div>
-                                <div class="mb-4 flex justify-center">
-                                    <label class="block text-gray-700 font-bold mb-2" for="fouls_commited1">Team Work:</label>
-                                    <input class="shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="number" id="fouls_commited1" name="fouls_commited1" value="0" min="0">
+                                <div class="mb-4 flex justify-center sm:mb-4">
+                                    <label class="block text-gray-700 font-bold mb-2" for="fouls_commited1">Inefficiency:</label>
+                                    <input class="shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline sm:w-full" type="number" id="fouls_commited1" name="fouls_commited1" value="0" min="0">
                                 </div>
-                                <div class="mb-4 flex justify-center">
-                                    <label class="block text-gray-700 font-bold mb-2" for="fouls_received">Organization:</label>
-                                    <input class="shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="number" id="fouls_received1" name="fouls_received1" value="0" min="0">
+                                <div class="mb-4 flex justify-center sm:mb-4">
+                                    <label class="block text-gray-700 font-bold mb-2" for="fouls_received">Teamwork:</label>
+                                    <input class="shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline sm:w-full" type="number" id="fouls_received1" name="fouls_received1" value="0" min="0">
                                 </div>
-                                <div class="mb-4 flex justify-center">
-                                    <label class="block text-gray-700 font-bold mb-2" for="red_cards">Cheating 🟥:</label>
-                                    <input class="shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="number" id="red_cards1" name="red_cards1" value="0" min="0">
+                                <div class="mb-4 flex justify-center sm:mb-4">
+                                    <label class="block text-gray-700 font-bold mb-2" for="red_cards">Derivative 🟥:</label>
+                                    <input class="shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline sm:w-full" type="number" id="red_cards1" name="red_cards1" value="0" min="0">
                                 </div>
-                                <div class="mb-4 flex justify-center">
-                                    <label class="block text-gray-700 font-bold mb-2" for="yellow_cards1">No Documentation 🟨:</label>
-                                    <input class="shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="number" id="yellow_cards1" name="yellow_cards1" value="0" min="0">
+                                <div class="mb-4 flex justify-center sm:mb-4">
+                                    <label class="block text-gray-700 font-bold mb-2" for="yellow_cards1">Miscommunication 🟨:</label>
+                                    <input class="shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline sm:w-full" type="number" id="yellow_cards1" name="yellow_cards1" value="0" min="0">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="form-group col-2">
+                    <div class="form-group">
                         <div class="text-center mt-20">
                             <div class="container text-center">
                                 <h1 class="text-white font-bold mb-2">Chronometer</h1>
@@ -68,9 +67,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-group col-3">
-                        <h2 class="text-3xl font-bold text-white">{{$game->team2->name}}</h2>
-                        <div class="mt-2 bg-white shadow-md rounded px-8 pt-2 pb-8 mb-4">  
+                    <div class="form-group">
+                        <h2 class="text-3xl font-bold text-white sm:text-center">{{$game->team2->name}}</h2>
+                        <div class="mt-2 bg-white shadow-md rounded px-8 pt-2 pb-8 mb-4 sm:mt-2">
                             <div class="grid grid-cols-3 gap-4">
                                 <div class="col-end-4" title="category">
                                     <p class="text-gray-900 font-bold text-end">{{ $game->category->name }}</p>
@@ -78,35 +77,38 @@
                                     <input type="hidden" name="team_id2" id="team_id2" value="{{ old('team_id2', $game->team2_id) }}">
                                 </div>
                             </div>
-                            <div class="grid justify-items-start">
-                                <div class="mb-4 flex justify-center">
-                                    <input class="shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="number" id="goals2" name="goals2" value="0" min="0">
-                                    <label class="block text-gray-700 font-bold mb-2" for="goals2">&nbsp: Clean Code</label>
+                            <div class="grid justify-items-start sm:flex-col">
+                                <div class="mb-4 flex justify-center sm:mb-4">
+                                    <input class="shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline sm:w-full" type="number" id="goals2" name="goals2" value="0" min="0">
+                                    <label class="block text-gray-700 font-bold mb-2" for="goals2">&nbsp: Creativity</label>
                                 </div>
-                                <div class="mb-4 flex justify-center">
-                                    <input class="shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="number" id="fouls_commited2" name="fouls_commited2" value="0" min="0">
-                                    <label class="block text-gray-700 font-bold mb-2" for="fouls_committed2">&nbsp :Team Work</label>
+                                <div class="mb-4 flex justify-center sm:mb-4">
+                                    <input class="shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline sm:w-full" type="number" id="fouls_commited2" name="fouls_commited2" value="0" min="0">
+                                    <label class="block text-gray-700 font-bold mb-2" for="fouls_committed2">&nbsp :Inefficiency</label>
                                 </div>
-                                <div class="mb-4 flex justify-center">                                                    
-                                    <input class="shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="number" id="fouls_received2" name="fouls_received2" value="0" min="0">
-                                    <label class="block text-gray-700 font-bold mb-2" for="fouls_received2">&nbsp :Organization</label>
+                                <div class="mb-4 flex justify-center sm:mb-4">
+                                    <input class="shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline sm:w-full" type="number" id="fouls_received2" name="fouls_received2" value="0" min="0">
+                                    <label class="block text-gray-700 font-bold mb-2" for="fouls_received2">&nbsp :Teamwork</label>
                                 </div>
-                                <div class="mb-4 flex justify-center">                                                    
-                                    <input class="shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="number" id="red_cards2" name="red_cards2" value="0" min="0">
-                                    <label class="block text-gray-700 font-bold mb-2" for="red_cards2">&nbsp :🟥 Cheating</label>
+                                <div class="mb-4 flex justify-center sm:mb-4">
+                                    <input class="shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline sm:w-full" type="number" id="red_cards2" name="red_cards2" value="0" min="0">
+                                    <label class="block text-gray-700 font-bold mb-2" for="red_cards2">&nbsp :🟥 Derivative</label>
                                 </div>
-                                <div class="mb-4 flex justify-center">                                                   
-                                    <input class="shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="number" id="yellow_cards2" name="yellow_cards2" value="0" min="0">
-                                    <label class="block text-gray-700 font-bold mb-2" for="yellow_cards2">&nbsp :🟨 No Documentation</label>
+                                <div class="mb-4 flex justify-center sm:mb-4">
+                                    <input class="shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline sm:w-full" type="number" id="yellow_cards2" name="yellow_cards2" value="0" min="0">
+                                    <label class="block text-gray-700 font-bold mb-2" for="yellow_cards2">&nbsp :🟨 Miscommunication</label>
                                 </div>
-                            </div>        
+                            </div>
                         </div>
-                    </div>                    
+                    </div>
                 </div>
             </form>
         </div>
     </div>
 </div>
+@endsection
+
+@section('scripts')
 <script>
     let seconds = 0;
     let minutes = 0;
@@ -150,6 +152,9 @@
         document.getElementById('goals_diff').value = goalsDiff;
     });
 </script>
+@endsection
+
+@section('styles')
 <style>
     #cronometro {
       font-size: 3em;

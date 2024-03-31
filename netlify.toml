@@ -1,0 +1,10 @@
+[build]
+  command = "npm run build && composer install --no-dev"
+  publish = "public"
+
+[dev]
+  command = "npm run dev -- --watch"
+
+[build.environment]
+  NODE_VERSION = "14"
+

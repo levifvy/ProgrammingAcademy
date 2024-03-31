@@ -10,9 +10,9 @@
         <img class="block h-full w-full object-cover object-center cursor-pointer" src="{{asset('/img/python_java.jpg')}}" alt="Football" loading="lazy" />
       </a>
       <div class="mt-2 text-center">
-        <h3 class="title-font mb-1 text-xs tracking-widest text-white">List of our courses</h3>
-        <h2 class="title-font text-lg font-medium text-gray-900"><strong>All courses</strong></h2>
-        <p class="mt-0 text-xs">Found your favorite language</p>
+        <h3 class="title-font mb-1 text-xs tracking-widest text-white">List of our teams</h3>
+        <h2 class="title-font text-lg font-medium text-gray-900"><strong>Teams</strong></h2>
+        <p class="mt-0 text-xs">Found your favorite team</p>
       </div>
     </div>
     <div class="w-full p-2">
