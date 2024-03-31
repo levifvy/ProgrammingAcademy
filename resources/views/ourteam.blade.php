@@ -3,7 +3,7 @@
 @section('title','Ourteam')
 
 @section('content')
-<div class="bg-gradient-to-br from-purple-950 via-blue-500 to-pink-500 h-screen">
+<div class="bg-gradient-to-b from-purple-950 via-blue-500 to-pink-500 h-screen">
   <section class="grid justify-center items-center bg-transparent from-green-300 to-purple-300 min-h-screen body-font text-gray-600">
     <h1 class="text-6xl font-bold text-white text-center mb-8">Founders</h1>
     <div class="grid grid-cols-2 gap-8 pb-40">

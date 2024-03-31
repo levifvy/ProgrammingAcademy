@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <nav class="flex flex-col lg:flex-row items-center justify-between bg-purple-950 p-4">
+        <nav class="flex flex-col lg:flex-row items-center justify-between bg-purple-950 p-4 w-full">
             <div class="flex items-center flex-shrink-0 text-white mr-6">
                 <a href="{{route('sites')}}">
                     <div class="flex items-center">
@@ -18,8 +18,8 @@
                     </div>
                 </a>
             </div>
-            
-            <div class="w-full lg:flex lg:items-center lg:w-auto">
+
+            <div class="w-full lg:flex lg:items-center lg:w-auto ml-2">
                 <div class="text-xl lg:flex-grow flex flex-col lg:flex-row justify-center lg:justify-start">
                     <a href="{{route('home')}}" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 {{request()->routeIs('home') ? 'active':''}}">Home</a>
                     <a href="{{route('plans')}}" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 {{request()->routeIs('plans') ? 'active':''}}">Plans</a>
@@ -27,11 +27,12 @@
                     <a href="{{route('games.index')}}" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 {{request()->routeIs('games.index*') ? 'active':''}}">Competitions</a>
                     <a href="{{route('results.index')}}" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 {{request()->routeIs('resultsMenu') ? 'active':''}}">Results</a>
                     <a href="{{route('about')}}" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 {{request()->routeIs('about') ? 'active':''}}">About</a>
-                    <a href="{{route('ourteam')}}" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 {{request()->routeIs('about') ? 'active':''}}">Founders</a>
+                    <a href="{{route('ourteam')}}" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 {{request()->routeIs('ourteam') ? 'active':''}}">Founders</a>
                     <a href="{{route('contactUs.index')}}" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 {{request()->routeIs('contactUs.index')? 'active':''}}">Contact</a>
                 </div>
             </div>
             
+
             <div class="relative inline-block text-left">
                 <div>
                     <button type="button" class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50" id="menu-button" aria-expanded="false" aria-haspopup="true">
@@ -41,70 +42,69 @@
                         </svg>
                     </button>
                 </div>
-            
+
                 <div class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none hidden" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
                     <div class="py-1" role="none">
-                        <a href="{{ route('players.create') }}" class="block w-full px-4 py-2 text-left text-sm 
-                            @if(Request::is('players/create')) 
-                                bg-gray-100 text-gray-900 
-                            @else 
-                                text-gray-700 
+                        <a href="{{ route('players.create') }}" class="block w-full px-4 py-2 text-left text-sm
+                            @if(Request::is('players/create'))
+                                bg-gray-100 text-gray-900
+                            @else
+                                text-gray-700
                             @endif">
                             New Student
                         </a>
-                        <a href="{{ route('categories.create') }}" class="block w-full px-4 py-2 text-left text-sm 
-                            @if(Request::is('categories/create')) 
-                                bg-gray-100 text-gray-900 
-                            @else 
-                                text-gray-700 
+                        <a href="{{ route('categories.create') }}" class="block w-full px-4 py-2 text-left text-sm
+                            @if(Request::is('categories/create'))
+                                bg-gray-100 text-gray-900
+                            @else
+                                text-gray-700
                             @endif">
                             New Category
                         </a>
-                        <a href="{{ route('games.create') }}" class="block w-full px-4 py-2 text-left text-sm 
-                            @if(Request::is('games/create')) 
-                                bg-gray-100 text-gray-900 
-                            @else 
-                                text-gray-700 
+                        <a href="{{ route('games.create') }}" class="block w-full px-4 py-2 text-left text-sm
+                            @if(Request::is('games/create'))
+                                bg-gray-100 text-gray-900
+                            @else
+                                text-gray-700
                             @endif">
                             New Competition
                         </a>
-                        <a href="{{ route('courses.create') }}" class="block w-full px-4 py-2 text-left text-sm 
-                            @if(Request::is('courses/create')) 
-                                bg-gray-100 text-gray-900 
-                            @else 
-                                text-gray-700 
+                        <a href="{{ route('courses.create') }}" class="block w-full px-4 py-2 text-left text-sm
+                            @if(Request::is('courses/create'))
+                                bg-gray-100 text-gray-900
+                            @else
+                                text-gray-700
                             @endif">
                             New Course
                         </a>
-                        <a href="{{ route('courses.index') }}" class="block w-full px-4 py-2 text-left text-sm 
-                            @if(Request::is('courses')) 
-                                bg-gray-100 text-gray-900 
-                            @else 
-                                text-gray-700 
+                        <a href="{{ route('courses.index') }}" class="block w-full px-4 py-2 text-left text-sm
+                            @if(Request::is('courses'))
+                                bg-gray-100 text-gray-900
+                            @else
+                                text-gray-700
                             @endif">
                             Search Courses
                         </a>
-                        <a href="{{ route('players.index') }}" class="block w-full px-4 py-2 text-left text-sm 
-                            @if(Request::is('players')) 
-                                bg-gray-100 text-gray-900 
-                            @else 
-                                text-gray-700 
+                        <a href="{{ route('players.index') }}" class="block w-full px-4 py-2 text-left text-sm
+                            @if(Request::is('players'))
+                                bg-gray-100 text-gray-900
+                            @else
+                                text-gray-700
                             @endif">
                             Search students
                         </a>
                         <form method="POST" action="#" role="none">
-                            <button type="submit" class="block w-full px-4 py-2 text-left text-sm 
-                                @if(Request::is('sign-out')) 
-                                    bg-gray-100 text-gray-900 
-                                @else 
-                                    text-gray-700 
-                                @endif" 
+                            <button type="submit" class="block w-full px-4 py-2 text-left text-sm
+                                @if(Request::is('sign-out'))
+                                    bg-gray-100 text-gray-900
+                                @else
+                                    text-gray-700
+                                @endif"
                                 role="menuitem" tabindex="-1" id="menu-item-3">Sign out
                             </button>
                         </form>
                     </div>
                 </div>
-                
             </div>
         </nav>
     </header>
@@ -123,16 +123,10 @@
         });
     });
 </script>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const menuButton = document.getElementById('menu-button');
-        const menu = document.getElementById('menu');
-
-        menuButton.addEventListener('click', function() {
-            const isExpanded = menu.getAttribute('aria-expanded') === 'true';
-            menu.setAttribute('aria-expanded', !isExpanded);
-            menu.classList.toggle('hidden');
-        });
-    });
-</script>
-
+<style>
+    /* Estilos para el menú */
+    .active {
+        font-weight: bold;
+        color: white !important;
+    }
+</style>
