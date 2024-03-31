@@ -25,32 +25,33 @@
                             <div class="grid justify-items-end sm:flex-col">
                                 <div class="mb-4 flex justify-center sm:mb-4">
                                     <label class="block text-gray-700 font-bold mb-2" for="goals1">Creativity:</label>
-                                    <input class="shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline sm:w-full" type="number" id="goals1" name="goals1" value="0" min="0">
+                                    <input class="input-style text-black text-center font-bold" type="number" id="goals1" name="goals1" value="0" min="0">
                                 </div>
                                 <div class="mb-4 flex justify-center sm:mb-4">
                                     <label class="block text-gray-700 font-bold mb-2" for="fouls_commited1">Inefficiency:</label>
-                                    <input class="shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline sm:w-full" type="number" id="fouls_commited1" name="fouls_commited1" value="0" min="0">
+                                    <input class="input-style text-black text-center font-bold" type="number" id="fouls_commited1" name="fouls_commited1" value="0" min="0">
                                 </div>
                                 <div class="mb-4 flex justify-center sm:mb-4">
-                                    <label class="block text-gray-700 font-bold mb-2" for="fouls_received">Teamwork:</label>
-                                    <input class="shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline sm:w-full" type="number" id="fouls_received1" name="fouls_received1" value="0" min="0">
+                                    <label class="block text-gray-700 font-bold mb-2" for="fouls_received1">Teamwork:</label>
+                                    <input class="input-style text-black text-center font-bold" type="number" id="fouls_received1" name="fouls_received1" value="0" min="0">
                                 </div>
                                 <div class="mb-4 flex justify-center sm:mb-4">
-                                    <label class="block text-gray-700 font-bold mb-2" for="red_cards">Derivative 🟥:</label>
-                                    <input class="shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline sm:w-full" type="number" id="red_cards1" name="red_cards1" value="0" min="0">
+                                    <label class="block text-gray-700 font-bold mb-2" for="red_cards1">Derivative 🟥:</label>
+                                    <input class="input-style text-black text-center font-bold" type="number" id="red_cards1" name="red_cards1" value="0" min="0">
                                 </div>
                                 <div class="mb-4 flex justify-center sm:mb-4">
                                     <label class="block text-gray-700 font-bold mb-2" for="yellow_cards1">Miscommunication 🟨:</label>
-                                    <input class="shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline sm:w-full" type="number" id="yellow_cards1" name="yellow_cards1" value="0" min="0">
+                                    <input class="input-style text-black text-center font-bold" type="number" id="yellow_cards1" name="yellow_cards1" value="0" min="0">
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="text-center mt-20">
+                            <!-- Chronometer HTML -->
                             <div class="container text-center">
                                 <h1 class="text-white font-bold mb-2">Chronometer</h1>
-                                <h2 class="text-black"><span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span></h2><br>
+                                <h2 class="text-white font-bold"><span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span></h2><br>
                                 <button class="text-white font-bold mb-2" id="start-btn" type="button">Start</button>&nbsp&nbsp
                                 <button class="text-white font-bold mb-2" id="pause-btn" type="button">Pause</button>
                             </div>
@@ -79,23 +80,23 @@
                             </div>
                             <div class="grid justify-items-start sm:flex-col">
                                 <div class="mb-4 flex justify-center sm:mb-4">
-                                    <input class="shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline sm:w-full" type="number" id="goals2" name="goals2" value="0" min="0">
+                                    <input class="input-style text-black text-center font-bold" type="number" id="goals2" name="goals2" value="0" min="0">
                                     <label class="block text-gray-700 font-bold mb-2" for="goals2">&nbsp: Creativity</label>
                                 </div>
                                 <div class="mb-4 flex justify-center sm:mb-4">
-                                    <input class="shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline sm:w-full" type="number" id="fouls_commited2" name="fouls_commited2" value="0" min="0">
+                                    <input class="input-style text-black text-center font-bold" type="number" id="fouls_commited2" name="fouls_commited2" value="0" min="0">
                                     <label class="block text-gray-700 font-bold mb-2" for="fouls_committed2">&nbsp :Inefficiency</label>
                                 </div>
                                 <div class="mb-4 flex justify-center sm:mb-4">
-                                    <input class="shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline sm:w-full" type="number" id="fouls_received2" name="fouls_received2" value="0" min="0">
+                                    <input class="input-style text-black text-center font-bold" type="number" id="fouls_received2" name="fouls_received2" value="0" min="0">
                                     <label class="block text-gray-700 font-bold mb-2" for="fouls_received2">&nbsp :Teamwork</label>
                                 </div>
                                 <div class="mb-4 flex justify-center sm:mb-4">
-                                    <input class="shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline sm:w-full" type="number" id="red_cards2" name="red_cards2" value="0" min="0">
+                                    <input class="input-style text-black text-center font-bold" type="number" id="red_cards2" name="red_cards2" value="0" min="0">
                                     <label class="block text-gray-700 font-bold mb-2" for="red_cards2">&nbsp :🟥 Derivative</label>
                                 </div>
                                 <div class="mb-4 flex justify-center sm:mb-4">
-                                    <input class="shadow appearance-none border rounded w-24 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline sm:w-full" type="number" id="yellow_cards2" name="yellow_cards2" value="0" min="0">
+                                    <input class="input-style text-black text-center font-bold" type="number" id="yellow_cards2" name="yellow_cards2" value="0" min="0">
                                     <label class="block text-gray-700 font-bold mb-2" for="yellow_cards2">&nbsp :🟨 Miscommunication</label>
                                 </div>
                             </div>
@@ -156,15 +157,12 @@
 
 @section('styles')
 <style>
-    #cronometro {
-      font-size: 3em;
-      text-align: center;
-    }
-    span {
-      display: inline-block;
-      padding: 0.2em;
-      border-radius: 0.2em;
-      background-color: #eee;
+    .input-style {
+        height: 40px; /* Set a fixed height for all inputs */
+        color: black; /* Set text color to black */
+        text-align: center; /* Center-align text */
+        font-weight: bold; /* Set font weight to bold */
+        /* Add any additional styling here */
     }
 </style>
 @endsection
